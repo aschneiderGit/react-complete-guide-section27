@@ -3,8 +3,10 @@ class Todo {
 	text: string;
 
 	constructor(todoText: string) {
+		console.log('call');
 		this.text = todoText;
-		this.id = new Date().toISOString();
+		this.id = Date.now().toString();
+		console.log(this.id);
 	}
 }
 
